@@ -2,9 +2,11 @@ body {
   background-color: #f9f9f9 !important;
 }
 .sprite {
-  background-image: url('images/icons/sprite.png');
+  background-image: url('../images/icons/sprite.png');
 }
 .nopadding { padding: 0px; }
+.pull-right { float: right; }
+.pull-left { float: left; }
 [main-wrapper] {
   margin-top: 50px;
 }
@@ -41,12 +43,12 @@ header > nav {
   position: absolute;
   left: 0;
   right: 0;
-  top: 0;
-  bottom: 0;
+  bottom: 5px;
   margin: auto;
-  width: 20px;
-  height: 20px;
-  background-color: red;
+  width: 18px;
+  height: 15px;
+  background-image: url('../images/icons/sprite.png');
+  background-position: -560px -144px;
 }
 .destination-form .md-form label {
   top: 17px;
@@ -60,6 +62,56 @@ header > nav {
   transform: translateY(-110%);
 }
 /* ==End== */
+/* ==Date Wrapper== */
+.date-wrapper {
+  margin: 7.5px 0px;
+}
+.date-wrapper .md-form {
+  margin: 7.5px 0px;
+}
+.date-wrapper .md-form {
+  max-width: 150px;
+  width: 100%;
+}
+.dd, .dt {
+  position: relative;
+}
+.dt span {
+  font-size: 13px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.date-wrapper .datepicker {
+  border: solid 1px #dedede;
+  color: #999;
+  margin: 0px;
+  padding: 8px 15px 7px 15px;
+  width: 100%;
+  height: 32px;
+  font-size: 13px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.calendarIcon .calender {
+  position: absolute;
+  right: 7px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  background-position: -480px -144px;
+}
+/*== Persion Wrapper==*/
+.persion-wrapper .md-form {
+  margin-bottom: 0px;
+}
+.persion-wrapper .select-dropdown {
+  margin: 0px !important;
+}
+.persion-wrapper span.caret {
+  top: 9px;
+}
+/* =End= */
 .flex-box {
   display: -ms-flex;
   display: flex;

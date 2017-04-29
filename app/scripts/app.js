@@ -22,7 +22,8 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 
 // flightController
 app.controller('flightCtrl', function($scope) {
-
+	$('.datepicker').pickadate();
+	$('.mdb-select').material_select();
 });
 // flightController
 app.controller('hotelCtrl', function($scope) {
