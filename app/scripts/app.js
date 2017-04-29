@@ -1,22 +1,25 @@
 var app = angular.module('app',['ui.router']);
-app.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
-	// Routes
-	$stateProvider
-	.state('/', {
-	    url: '/',
-	    templateUrl: 'views/flight.html',
-	    controller: 'flightCtrl',
+
+app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $urlRouterProvider){
+	$stateProvider.state('flight', {
+		    url: '/',
+		    templateUrl: 'views/flight.html',
+		    controller: 'flightCtrl',
+		    authenticate: true
+		})
+	  .state('hotel', {
+	    url: '/hotel',
+	    templateUrl: 'views/hotel.html',
+	    controller: 'hotelCtrl',
 	    authenticate: true
-	})
-  .state('hotel', {
-    url: '/hotel',
-    templateUrl: 'views/hotel.html',
-    controller: 'hotelCtrl',
-    authenticate: true
-  });
-  $urlRouterProvider.otherwise("/");
-  $locationProvider.html5Mode(true);
-});
+	  });
+		$urlRouterProvider.otherwise("/");
+	// $locationProvider.html5Mode({
+	//   enabled: true,
+	//   requireBase: false
+	// }).hashPrefix('!');
+}]);
+
 // flightController
 app.controller('flightCtrl', function($scope) {
 

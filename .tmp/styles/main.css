@@ -1,6 +1,9 @@
 body {
   background-color: #f9f9f9 !important;
 }
+.sprite {
+  background-image: url('images/icons/sprite.png');
+}
 .nopadding { padding: 0px; }
 [main-wrapper] {
   margin-top: 50px;
@@ -11,11 +14,50 @@ header > nav {
   border-bottom: 1px solid #ddd;
 }
 /* ==Flight Wrapper== */
-.headding h2 {
+.headding h3 {
   font-weight: bold;
 }
-.headding h2 + p {
+.headding h3 + p {
   color: #999;
+}
+.field-row {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.field-row .form-group {
+  margin: 0px 20px 0px 0px;
+}
+.field-row .form-group label {
+  margin-bottom: 0px;
+  font-size: 13px;
+  padding-left: 27px;
+}
+/*==Destion Form Start==*/
+.destination-form .md-form {
+  margin-bottom: 0px;
+}
+.destination-form::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+.destination-form .md-form label {
+  top: 17px;
+}
+.destination-form .md-form .form-control {
+  margin-bottom: 0px;
+  padding-bottom: 0.2rem;
+  padding-top: 0.6rem;
+}
+.destination-form .md-form label.active {
+  transform: translateY(-110%);
 }
 /* ==End== */
 .flex-box {
