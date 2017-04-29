@@ -19,6 +19,7 @@ header > nav {
 }
 /* ==End== */
 .flex-box {
+  display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-between;
@@ -87,6 +88,7 @@ header > nav {
   border-right: 1px solid #ddd;
   border-left: 1px solid #ddd;
   position: relative;
+  -webkit-box-shadow: -2px 0 2px #eee,2px 0 2px #eee;
   box-shadow: -2px 0 2px #eee,2px 0 2px #eee;
 }
 

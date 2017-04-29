@@ -1,10 +1,7 @@
 node_modules/*
 bower_components/*
-dist/*
-app/*
-.idea
 bower_components/
+.idea
 node_modules/
-app/
 /config/config.js
 *.swp

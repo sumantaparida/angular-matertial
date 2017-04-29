@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Angular</title>
+  <base href="/">
+<!--   <link rel="stylesheet" href="bower_components/MDBootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="bower_components/MDBootstrap/css/mdb.min.css"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/mdb.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body ng-app="app">
+  <div ng-include src="'views/partials/header.html'"></div>
+  <div class="container-fluid nopadding" main-wrapper>
+    <div class="container nopadding flex-box">
+      <div class="col-xs-12 col-sm-3 left-container" ng-include src="'views/partials/left-nav.html'"></div>
+      <div class="col-xs-12 col-sm-6 center-container">
+        <!-- <div ng-view></div> -->
+        <div id="root" ui-view></div>
+      </div>
+      <div class="col-xs-12 col-sm-3 right-container">right</div>
+    </div>
+  </div>
+  <div ng-include src="'views/partials/footer.html'"></div>
+</body>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/ng-dialog/0.2.13/js/ngDialog.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://mdbootstrap.com/live/_MDB/js/tether.min.js"></script>
+<script type="text/javascript" src="https://mdbootstrap.com/live/_MDB/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://mdbootstrap.com/live/_MDB/js/mdb.min.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+</html>
