@@ -6248,7 +6248,7 @@ i.btn-danger {
 }
 
 .navbar.navbar-dark .navbar-toggler {
-  color: #fff;
+  color: #000;
 }
 
 .navbar.navbar-dark .nav-link {
@@ -7236,7 +7236,7 @@ ul.instagram-photos li img {
   height: 2rem;
   line-height: 3rem;
   width: 100%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin: 0 0 15px 0;
   padding: 0;
   display: block;
@@ -9324,10 +9324,10 @@ button, html [type="button"], [type="reset"], [type="submit"] {
 
 .dropdown-content li > a,
 .dropdown-content li > span {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #4285F4;
   display: block;
-  padding: 1rem 1rem;
+  padding: 0.3rem 0.8rem;
 }
 
 .dropdown-content li > a > i {

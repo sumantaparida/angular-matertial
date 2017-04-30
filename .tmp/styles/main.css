@@ -7,6 +7,9 @@ body {
 .nopadding { padding: 0px; }
 .pull-right { float: right; }
 .pull-left { float: left; }
+.hide {
+  display: none;
+}
 [main-wrapper] {
   margin-top: 50px;
 }
@@ -38,7 +41,7 @@ header > nav {
 .destination-form .md-form {
   margin-bottom: 0px;
 }
-.destination-form::after {
+.wrapper-flight .destination-form::after {
   content: '';
   position: absolute;
   left: 0;
@@ -110,6 +113,51 @@ header > nav {
 }
 .persion-wrapper span.caret {
   top: 9px;
+}
+.mdb-select + span.hint {
+  font-size: 12px;
+  color: #999;
+}
+.moreOption, .searchBtnContainer, .moreOptionDetails {
+  padding: 7.5px 0px;
+}
+.moreOption > p {
+  margin-bottom: 0px;
+}
+.moreOption > p a {
+  font-size: 13px;
+}
+.moreOption .dArrow {
+  float: left;
+  width: 13px;
+  height: 13px;
+  margin-right: 5px;
+  margin-top: 4px;
+  background-position: 0px -592px;
+}
+.wrapper-hotel .searchBtnContainer {
+  margin-top: 20px;
+}
+.trustMarkers {
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 149px;
+  height: 137px;
+  background-position: -300px -6px;
+  background-image: url('../images/icons/hotelSprite.png');
+}
+.searchBtnContainer {
+  border-top: dotted 1px #999;
+  margin-bottom: 20px;
+}
+.searchBtnContainer .md-form {
+  margin-bottom: 0px;
+}
+.searchBtnContainer .btn {
+  margin-left: 0px;
+  margin-right: 0px;
+  float: right;
 }
 /* =End= */
 .flex-box {
@@ -186,3 +234,72 @@ header > nav {
 
 /* ===center container=== */
 .right-container {}
+/*==Footer start===*/
+footer {
+  float: left;
+  width: 100%;
+  border-top: solid 1px #ccc;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+footer .top-footer {
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+.left-footer .img {
+  max-width: 200px;
+}
+.right-footer h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.right-footer h4 span {
+  display: block;
+}
+.right-footer h4 span:last-child {
+  font-size: 15px;
+}
+.right-footer h4 span:last-child > a {
+  color: #0275d8;
+  text-decoration: none;
+}
+/* ==Global Footer start== */
+.globalFooter {
+  border-top: solid 1px #ccc;
+  padding-top: 10px;
+}
+.globalFooter nav {
+  float: left;
+  width: 100%;
+}
+.inline, .secondaryLinks {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.inline li {
+  display: inline-block;
+  float: left;
+  margin-right: 10px;
+  font-size: 13px;
+}
+.inline li a {
+  color: #0275d8;
+}
+.secondaryLinks li {
+  color: #999;
+  float: left;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.secondaryLinks li a {
+  color: #999;
+}
+.bottom-footer {
+  float: left;
+  width: 100%;
+  padding-top: 10px;
+  border-top: solid 1px #ccc;
+  margin-top: 10px;
+}

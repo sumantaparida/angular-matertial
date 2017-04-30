@@ -1,4 +1,4 @@
-<div class="data-wrapper">
+<div class="data-wrapper wrapper-flight">
   <div class="col-xs-12 headding">
     <h3>Search flights</h3>
     <p>Fly anywhere. Fly everywhere.</p>
@@ -104,6 +104,7 @@
                 <option value="">2</option>
                 <option value="">3</option>
             </select>
+            <span class="hint">2-11 yrs</span>
           </div>
         </div>
       </div>
@@ -119,6 +120,7 @@
                 <option value="">2</option>
                 <option value="">3</option>
             </select>
+            <span class="hint">Below 2 yrs</span>
           </div>
         </div>
       </div>
@@ -126,7 +128,49 @@
   </div>
   <!-- // -->
   <div class="col-xs-12">
-    sd
+    <div class="col-xs-12 moreOption nopadding">
+      <p>
+        <a href="javascript:void(0);" class="weak" id="MoreOptionsLink" tabindex="11" title="More search options">
+        <strong><i class="sprite dArrow"></i> More options:</strong> Class of travel, Airline preference</a>
+      </p>
+    </div>
+    <div class="col-xs-12 moreOptionDetails hide">
+      <div class="row">
+        <div class="col-xs-6 col-sm-6">
+          <div class="md-form">
+            <div class="dt">
+              <span>Class of travel</span>
+            </div>
+            <div class="dd">
+              <select class="mdb-select">
+                  <option value="" disabled selected>1</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-6">
+          <div class="md-form">
+            <div class="dt">
+              <span>Preferred Airline</span>
+            </div>
+            <div class="dd">
+              <select class="mdb-select">
+                  <option value="" disabled selected>1</option>
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-12 searchBtnContainer nopadding" id="additional-buttons">
+      <button type="button" class="btn btn-orange waves-effect waves-light">Search flights</button>
+    </div>
   </div>
   <!-- // form End -->
 </div>
