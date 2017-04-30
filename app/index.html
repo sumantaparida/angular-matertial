@@ -14,18 +14,7 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body ng-app="app">
-  <div ng-include src="'views/partials/header.html'"></div>
-  <div class="container-fluid nopadding" main-wrapper>
-    <div class="container nopadding flex-box">
-      <div class="col-xs-12 col-sm-3 left-container" ng-include src="'views/partials/left-nav.html'"></div>
-      <div class="col-xs-12 col-sm-6 center-container">
-        <!-- <div ng-view></div> -->
-        <div ui-view></div>
-      </div>
-      <div class="col-xs-12 col-sm-3 right-container">right</div>
-    </div>
-  </div>
-  <div ng-include src="'views/partials/footer.html'"></div>
+  <div ui-view></div>
 </body>
 <script type="text/javascript" src="bower_components/angular/angular.js"></script>
 <!-- <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script> -->

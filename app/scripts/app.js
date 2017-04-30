@@ -22,17 +22,15 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 
 // flightController
 app.controller("flightCtrl",['$scope','$state', function($scope, $state){
+	//$scope.state = $state.is('flight');
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
 	console.log($state.is('flight'));
 }]);
 // flightController
 app.controller("hotelCtrl",['$scope','$state', function($scope, $state){
-	//$scope.state = $state.current.name
+	//$scope.state = $state.is('hotel');
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
-	$scope.state = $state.is('hotel');
-	$scope.name = "sumanta";
-	console.log($state.current.name);
 	console.log($state.is('hotel'));
 }]);
