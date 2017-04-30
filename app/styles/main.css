@@ -159,6 +159,12 @@ header > nav {
   margin-right: 0px;
   float: right;
 }
+/*==Packages Start==*/
+.checkbox_styling > label {
+  font-size: 13px;
+  top: 3px;
+  line-height: 16px;
+}
 /* =End= */
 .flex-box {
   display: -webkit-flex;
@@ -196,7 +202,7 @@ header > nav {
   border: 1px solid #ccc;
   background-color: #fff;
 }
-.left-nav > li.active::after {
+.left-nav > li.active::before {
   content: '';
   position: absolute;
   height: 100%;
@@ -206,13 +212,30 @@ header > nav {
   top: 0px;
   z-index: 1;
 }
+.left-nav > li::after {
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  background-position: -3px -192px;
+  width: 10px;
+  height: 15px;
+  filter: alpha(opacity=70);
+  opacity: 0.2;
+  cursor: pointer;
+  background-image: url('../images/icons/searchSprite14.png');
+}
+.left-nav > li.active::after {
+  opacity: 1;
+}
 .left-nav > li > a {
   display: block;
   padding: 10px 13px;
   color: #000;
   line-height: 26px;
 }
-.left-nav > li > a .fa {
+.left-nav > li > a .sprite {
   float: left;
   width: 24px;
   height: 24px;
@@ -220,10 +243,15 @@ header > nav {
   font-size: 21px;
   color: #7d7979;
 }
-.left-nav > li > a .fa-plane {
-  font-size: 23px;
-}
-
+.flights { background-position: -30px -686px; }
+.hotels { background-position: -64px -654px; }
+.activities { background-position: -238px -718px; }
+.packages { background-position: -144px -654px; }
+.trains { background-position: -106px -654px; }
+.flightDeals { background-position: -106px -654px; }
+.mobile { background-position: -283px -654px; }
+.trains { background-position: -106px -654px; }
+.hideB2B { background-position: -174px -654px; }
 /* ===center container=== */
 .center-container {
   background: #fff;

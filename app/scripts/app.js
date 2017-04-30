@@ -12,6 +12,12 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 	    templateUrl: 'views/hotel.html',
 	    controller: 'hotelCtrl',
 	    authenticate: true
+	  })
+		.state('packages', {
+	    url: '/packages',
+	    templateUrl: 'views/packages.html',
+	    controller: 'packagesCtrl',
+	    authenticate: true
 	  });
 		$urlRouterProvider.otherwise("/");
 	// $locationProvider.html5Mode({
@@ -22,15 +28,22 @@ app.config(['$stateProvider','$urlRouterProvider', function($stateProvider, $url
 
 // flightController
 app.controller("flightCtrl",['$scope','$state', function($scope, $state){
-	//$scope.state = $state.is('flight');
+	$scope.state1 = $state.is('flight');
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
-	console.log($state.is('flight'));
+	console.log($scope.state1);
 }]);
 // flightController
 app.controller("hotelCtrl",['$scope','$state', function($scope, $state){
-	//$scope.state = $state.is('hotel');
+	$scope.state2 = $state.is('hotel');
 	$('.datepicker').pickadate();
 	$('.mdb-select').material_select();
-	console.log($state.is('hotel'));
+	console.log($scope.state2);
+}]);
+// packgesController
+app.controller("packagesCtrl",['$scope','$state', function($scope, $state){
+	$scope.state3 = $state.is('packages');
+	$('.datepicker').pickadate();
+	$('.mdb-select').material_select();
+	console.log($scope.state2);
 }]);
